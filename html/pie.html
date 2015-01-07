@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Highcharts Example</title>
+		<script type="text/javascript" src="../js/jquery-1.8.2.min.js"></script>
+		<script type="text/javascript" src="../js/hashtable.js"></script>
+		<script type="text/javascript" src="../js/pie.js"></script>
+		<!-- This is  curve graph -->
+		<script type="text/javascript">
+
+			$(document).ready(function(){
+				drawPie("#container");
+				$("#test").click(function(){
+						drawPie("#container");
+					});
+				/*chart = $('#container').highcharts();
+				score1 = Math.floor((Math.random()*100+1));
+	        	plotsize = "40%";
+	        	chart = $('#container').highcharts();
+        		var scoreData =[];
+        		for (var i = 0; i < 5; i++) {
+				        scoreData.push(Math.floor((Math.random()*100+10)));
+				    }
+				//chart.options.plotOptions.pie.innerSize = "20";
+				//chart.isResizing = 1;
+        		//chart.series[0].setData(scoreData,false);
+        		$("#view").css("left",width+13);
+        		$("#view").css("top",height-28);
+        		$("#view").css("width",54);
+        		$("#view").css("height",52);
+        		$("#view").css("position","absolute");
+        		$("#view").css("font-size","65px");
+        		$("#view").css("color","#4512A7");
+	            $("#view").html("0");
+	            timerID = setInterval("num()", 2000/score1); 
+	            //chart.redraw();
+					
+				/*setTimeout(function(){
+					chart.addSeries({                        
+						id:1,
+						name: "gloomyfish",
+						data: [1,2,3]
+					}, false);
+					chart.addSeries({                        
+						id:2,
+						name: "wang-er-ma",
+						data: [5,2,1]
+					}, false);
+					chart.addSeries({                        
+						id:3,
+						name: "zhang-san",
+						data: [4,8,6]
+					}, false);
+					chart.redraw();
+				},2000);*/
+			});
+			
+		</script>
+	</head>
+	<body>
+		Welcome here!<br>
+		<script src="../js/highcharts/js/highcharts.js"></script>
+		<script src="../js/highcharts/js/highcharts-3d.js"></script>
+		<script src="../js/highcharts/js/modules/exporting.js"></script>   
+		<div id="container" style="min-width: 310px; min-height: 450px; margin: 0 auto"></div>
+		<div id="view"></div>
+		<button id="test">test</button>
+	</body>
+</html>
