@@ -1,0 +1,4 @@
+这是表格，包括柱状图，曲线图等，利用了开源的js库highcharts，而封装的接口drawCurveGraph(),参数分别为json_url表示json数据的url，div_id表示图表在整个html页面中位置，根据标签的id，或者class属性来确定，最后一定chart_type表示表格类型，例如column表示柱状图，spline表示曲线等，pie表示饼图等
+
+
+这只是粗糙的demo.
